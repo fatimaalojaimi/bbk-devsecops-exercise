@@ -51,8 +51,7 @@ jobs:
     - name: echo deploying going on 
       run: "echo deploying going on"
 
-    - rub: bandit -r .
-
+    
 
     uses: jpetrucciani/bandit-check@main
 
@@ -62,4 +61,3 @@ jobs:
     with:
       path: '.'
       bandit_flags: '-o audit-bandit.json -f json'
-      
