@@ -13,16 +13,16 @@ jobs:
     steps:
 
     - name: Echo building going on 
-      run: "Echo building going on"
+      run: "echo building going on"
 
 
   deploy-dummy:
-    name: deploy Echo statment
+    name: deploy echo statment
     runs-on: ubuntu-latest
     needs: build-dummy
     
     steps:
 
-    - name: Echo deploying going on 
-      run: "Echo deploying going on"
-      
+    - name: echo deploying going on 
+      run: "echo deploying going on"
+       
