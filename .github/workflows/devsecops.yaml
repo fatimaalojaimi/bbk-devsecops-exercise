@@ -59,7 +59,7 @@ jobs:
         bandit_flags: '-o audit-bandit.json -f json'
 
     - name: Upload NPM Audit Report
-        uses: actions/upload-artifact@v3
-        with:
-            name: audit-bandit.json
-            path: audit-bandit.json
+      uses: actions/upload-artifact@v3
+      with:
+        name: audit-bandit.json
+        path: audit-bandit.json
