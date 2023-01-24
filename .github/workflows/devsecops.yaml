@@ -16,7 +16,7 @@ jobs:
       run: "Echo building going on"
 
 
-   deploy-dummy:
+  deploy-dummy:
     name: deploy Echo statment
     runs-on: ubuntu-latest
     needs: build-dummy
