@@ -18,6 +18,8 @@ jobs:
           with:
             node-version: '14'
 
+        - run: npm i --package-lock-only
+
         - name: Run NPM Audit
           run: npm audit --json > npm-audit.json
 
