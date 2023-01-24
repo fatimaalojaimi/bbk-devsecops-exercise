@@ -18,8 +18,14 @@ jobs:
           with:
             node-version: '14'
 
-        - run: npm install --package-lock
-        - run: npm audit fix
+        # - run: npm install --package-lock
+        # - run: npm audit fix
+
+        - run: package-lock.json
+        - run: node_modules
+        - run: npm install
+
+
 
         - name: Run NPM Audit
           run: npm audit --json > npm-audit.json
