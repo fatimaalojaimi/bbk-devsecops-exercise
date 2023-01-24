@@ -53,7 +53,7 @@ jobs:
 
   
     - name: Bandit check
-    uses: jpetrucciani/bandit-check@main
-    with:
-      path: '.'
-      bandit_flags: '-o audit-bandit.json -f json'
+      uses: jpetrucciani/bandit-check@main
+      with:
+        path: '.'
+        bandit_flags: '-o audit-bandit.json -f json'
