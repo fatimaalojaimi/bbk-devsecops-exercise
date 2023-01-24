@@ -1,0 +1,28 @@
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch: 
+
+
+jobs:
+  build-dummy:
+    name: Build Echo statment
+    runs-on: ubuntu-latest
+    
+    steps:
+
+    - name: Echo building going on 
+      run: "Echo building going on"
+
+
+   deploy-dummy:
+    name: deploy Echo statment
+    runs-on: ubuntu-latest
+    needs: build-dummy
+    
+    steps:
+
+    - name: Echo deploying going on 
+      run: "Echo deploying going on"
+      
