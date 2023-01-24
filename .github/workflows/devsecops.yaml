@@ -62,5 +62,4 @@ jobs:
     with:
       path: '.'
       bandit_flags: '-o audit-bandit.json -f json'
-    if: always()
       
